@@ -36,6 +36,15 @@ void Enfileirar() {
 	}
 }
 
+void Desenfileirar() {
+	if (FilaVazia()) {
+		cout << "Fila vazia!" << endl;
+	}
+	else {
+		ini++;
+	}
+}
+
 void MostrarFila() {
 	if (FilaVazia()) {
 		cout << "Fila vazia!" << endl;
@@ -76,6 +85,7 @@ int main()
 			Enfileirar();
 		}
 		else if (opcao == 2) {
+			Desenfileirar();
 		}
 		else if (opcao == 3) {
 			MostrarFila();
