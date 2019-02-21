@@ -3,6 +3,23 @@
 
 using namespace std;
 
+#define tam 10
+
+int fila[tam];
+
+int ini = 0, fim = 0;
+
+bool FilaCheia() {
+	if (fim == tam) {
+		return true;
+	}
+	return false;
+}
+
+void Enfileirar() {
+
+}
+
 int main()
 {
 	int opcao = 1;
