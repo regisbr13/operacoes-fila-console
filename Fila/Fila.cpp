@@ -57,6 +57,15 @@ void MostrarFila() {
 	}
 }
 
+void ExibirIni() {
+	if (FilaVazia()) {
+		cout << "Fila vazia!" << endl;
+	}
+	else {
+		cout << "[" << ini + 1 << "] = " << fila[ini] << endl;
+	}
+}
+
 void ExibirQtd() {
 	if (FilaVazia()) {
 		cout << "Fila vazia!" << endl;
@@ -100,6 +109,7 @@ int main()
 			MostrarFila();
 		}
 		else if (opcao == 4) {
+			ExibirIni();
 		}
 		else if (opcao == 5) {
 			ExibirQtd();
