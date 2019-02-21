@@ -17,7 +17,7 @@ bool FilaCheia() {
 }
 
 bool FilaVazia() {
-	if(fim == 0) {
+	if(fim == ini) {
 		return true;
 	}
 	return false;
@@ -57,6 +57,15 @@ void MostrarFila() {
 	}
 }
 
+void ExibirQtd() {
+	if (FilaVazia()) {
+		cout << "Fila vazia!" << endl;
+	}
+	else {
+		cout << "A fila possui " << fim - ini << " elementos" << endl;
+	}
+}
+
 int main()
 {
 	int opcao = 1;
@@ -93,6 +102,7 @@ int main()
 		else if (opcao == 4) {
 		}
 		else if (opcao == 5) {
+			ExibirQtd();
 		}
 		else if (opcao == 6) {
 		}
