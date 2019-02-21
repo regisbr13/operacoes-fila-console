@@ -75,6 +75,14 @@ void ExibirQtd() {
 	}
 }
 
+void Esvaziar() {
+	if (FilaVazia()) {
+		cout << "Fila encontra-se vazia!" << endl;
+	}
+	fim = 0;
+	ini = 0;
+}
+
 int main()
 {
 	int opcao = 1;
@@ -115,6 +123,7 @@ int main()
 			ExibirQtd();
 		}
 		else if (opcao == 6) {
+			Esvaziar();
 		}
 		else {
 			cout << "Opçao Invalida";
