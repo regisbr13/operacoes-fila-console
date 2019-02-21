@@ -16,8 +16,36 @@ bool FilaCheia() {
 	return false;
 }
 
-void Enfileirar() {
+bool FilaVazia() {
+	if(fim == 0) {
+		return true;
+	}
+	return false;
+}
 
+void Enfileirar() {
+	if (FilaCheia()) {
+		cout << "Fila lotada!" << endl;
+	}
+	else {
+		int num;
+		cout << "Entre com um valor inteiro: ";
+		cin >> num;
+		fila[fim] = num;
+		fim++;
+	}
+}
+
+void MostrarFila() {
+	if (FilaVazia()) {
+		cout << "Fila vazia!" << endl;
+	}
+	else {
+		for (int i = ini; i < fim; i++) {
+			cout << "[" << i + 1 << "] = " << fila[i] << " ";
+		}
+		cout << endl;
+	}
 }
 
 int main()
@@ -45,10 +73,12 @@ int main()
 			cout << "Fim do programa";
 		}
 		else if (opcao == 1) {
+			Enfileirar();
 		}
 		else if (opcao == 2) {
 		}
 		else if (opcao == 3) {
+			MostrarFila();
 		}
 		else if (opcao == 4) {
 		}
