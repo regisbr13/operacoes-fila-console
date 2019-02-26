@@ -51,7 +51,7 @@ void MostrarFila() {
 	}
 	else {
 		for (int i = ini; i < fim; i++) {
-			cout << "[" << i + 1 << "] = " << fila[i] << " ";
+			cout << fila[i] << " ";
 		}
 		cout << endl;
 	}
@@ -62,7 +62,7 @@ void ExibirIni() {
 		cout << "Fila vazia!" << endl;
 	}
 	else {
-		cout << "[" << ini + 1 << "] = " << fila[ini] << endl;
+		cout << fila[ini] << endl;
 	}
 }
 
@@ -71,7 +71,7 @@ void ExibirQtd() {
 		cout << "Fila vazia!" << endl;
 	}
 	else {
-		cout << "A fila possui " << fim - ini << " elementos" << endl;
+		cout << "A fila possui " << fim - ini << " elemento(s)" << endl;
 	}
 }
 
